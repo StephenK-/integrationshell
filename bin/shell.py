@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import os
-import pw
+import func
 
 
 while True:
@@ -9,10 +9,10 @@ while True:
     userinputsplit = userinput.split()
 
     if (userinputsplit[0] == "pw"):
-        pw.pwd(userinputsplit[1:])
+        func.pwd(userinputsplit[1:])
     elif(userinputsplit[0] == "ls"):
-        pw.ls(userinputsplit[1:])
+        func.ls(userinputsplit[1:])
     elif(userinputsplit[0] == "cd"):
-        os.chdir(userinputsplit[1])
+        func.cd(userinputsplit[1:])
     else:
         print("Invalid command")
