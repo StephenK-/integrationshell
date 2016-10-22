@@ -8,11 +8,17 @@ while True:
 
     userinputsplit = userinput.split()
 
-    if (userinputsplit[0] == "pw"):
+    if userinputsplit[0] == "pw":
         func.pwd(userinputsplit[1:])
-    elif(userinputsplit[0] == "ls"):
+
+    elif userinputsplit[0] == "ls":
         func.ls(userinputsplit[1:])
-    elif(userinputsplit[0] == "cd"):
+
+    elif userinputsplit[0] == "cd":
         func.cd(userinputsplit[1:])
+
+    elif userinputsplit[0] == "ifc":
+        func.ifc(userinputsplit[1:])
+
     else:
         print("Invalid command")
