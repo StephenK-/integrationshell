@@ -4,7 +4,7 @@ import func
 
 
 while True:
-    userinput = raw_input(os.getcwd()+"$: ")
+    userinput = raw_input(os.getcwd()+":$ ")
 
     userinputsplit = userinput.split()
 
@@ -18,7 +18,7 @@ while True:
         func.cd(userinputsplit[1:])
 
     elif userinputsplit[0] == "ifc":
-        func.ifc(userinputsplit[1:])
+        func.ifc(userinput)
 
     else:
         print("Invalid command")
