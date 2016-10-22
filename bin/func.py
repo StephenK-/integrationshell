@@ -9,7 +9,7 @@ def ifc(*args):
     if args[0] == "":
         cmd += "eth0"
     else:
-        cmd += args
+        cmd += str(args)
     subprocess.call("ifc",(args[0]),shell=True)
 
 def ls(*args):
