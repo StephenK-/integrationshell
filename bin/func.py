@@ -5,12 +5,13 @@ def pwd(*args):
     subprocess.call("pwd",shell=True)
 
 def ifc(*args):
-
-    if args[0] == "ifc":
-        cmd = "ifc eth0"
+    cmd = "ifconfig"
+    print(args)
+    if args[0] == []:
+        cmd += " eth0"
     else:
-        cmd = args[0]
-    print cmd
+        cmd += " "+str(*args[0])
+    print(cmd)
     subprocess.call(cmd,shell=True)
 
 def ls(*args):

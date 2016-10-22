@@ -18,7 +18,7 @@ while True:
         func.cd(userinputsplit[1:])
 
     elif userinputsplit[0] == "ifc":
-        func.ifc(userinput)
+        func.ifc(userinputsplit[1:])
 
     else:
         print("Invalid command")
