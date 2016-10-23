@@ -1,7 +1,4 @@
 import subprocess, os, time, getpass, grp, pwd
-import os
-import time
-import getpass
 
 def pw(*args):
     subprocess.call("pwd",shell=True)
@@ -20,7 +17,7 @@ def dt(*args):
 def ud(*args):
     name = getpass.getuser()
     user = pwd.getpwnam(name)
-    print str(user.pw_uid)+","+str(user.pw_gid)+","+name+","+str(grp.getgrgid(user.pw_gid))+","+str(os.stat(os.getenv('HOME')).st_ino)
+    print str(user.pw_uid)+","+str(user.pw_gid)+","+name+","+str(grp.getgrgid(user.pw_gid))+","+str(os.stat(os.path.expanduser(os.getenv('HOME'))).st_ino)
 
 def ls(*args):
     subprocess.call("ls",shell=True)
