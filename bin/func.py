@@ -8,7 +8,7 @@ def pw(*args):
 
 def ifc(*args):
     cmd = "ifconfig"
-    if args[0][1] == []:
+    if args[0] == ['ifc']:
         cmd += " eth0"
     else:
         cmd += " "+str(args[0][1])
