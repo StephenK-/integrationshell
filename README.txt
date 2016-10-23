@@ -2,7 +2,7 @@ Installation
 -------------
 Log into the linux VM of your choice.
 
-If connected to the internet, pull the repo from GitHub (https://github.com/StephenK-/integrationshell)
+If connected to the internet, download the repo from GitHub (https://github.com/StephenK-/integrationshell)
 Once you have the up-to-date integrationshell folder on the vm, open the permissions for intergrationshell/bin/shell.py (the easiest way is to use chmod 777)
 Set a user to use the shell automatically, sudo chsh -s intergrationshell/bin/shell.py (YOURUSERNAMEHERE)
 
